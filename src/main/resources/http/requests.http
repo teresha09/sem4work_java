@@ -1,0 +1,23 @@
+GET  http://localhost/api/users
+#Accept: */*
+#Cache-Control: no-cache
+#Content-Type: application/json
+####
+GET  http://localhost/api/files/5
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+###
+GET localhost/search/users?q=р&page=0&size=3&state=CONFIRMED
+###
+GET  http://localhost/api/file/init
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+###
+GET  http://localhost/api/file/convert
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+###
+
